@@ -1,5 +1,4 @@
 import express from "express";
-
 import statusRouter from "./routes/status.route";
 import usersRouter from "./routes/users.route";
 
@@ -11,7 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // CONFIGURAÇÕES DE ROTAS
 app.use(usersRouter);
-
 app.use(statusRouter);
 
 // CONFIGURAÇÕES DO SERVER
